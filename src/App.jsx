@@ -33,7 +33,7 @@ export default function App()  {
      
       <div>
           <Box className='flex justify-center mt-10 '>
-        <Badge badgeContent={4} color="secondary">
+        <Badge badgeContent={inputValue.length} color="error">
              <h1 className='text-blue-900 text-5xl font-bold '>ToDo List</h1>
           </Badge>
           </Box>
