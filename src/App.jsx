@@ -1,4 +1,4 @@
-import { TextField , Box, Divider,   } from '@mui/material';
+import { TextField , Box, Divider, Badge  } from '@mui/material';
 import Button from '@mui/material/Button'; 
 import { useState , useRef } from 'react';
 import { Check, Delete } from "@mui/icons-material";
@@ -32,8 +32,11 @@ export default function App()  {
   return (
      
       <div>
-
-           
+          <Box className='flex justify-center mt-10 '>
+        <Badge badgeContent={4} color="secondary">
+             <h1 className='text-blue-900 text-5xl font-bold '>ToDo List</h1>
+          </Badge>
+          </Box>
 
       <Box className='items-center flex justify-center gap-3 mt-12'> 
         {/* Input bod */}
